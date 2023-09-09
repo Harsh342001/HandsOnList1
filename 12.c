@@ -5,7 +5,7 @@
 #include<string.h>
 int main(){
 	
-	const char *filename = "qus12.c"; // Change this to your file's path
+	const char *filename = "12.txt"; // Change this to your file's path
 
         // Open the file in read-only mode
         int fileDescriptor = open(filename,O_RDWR);
@@ -15,7 +15,7 @@ int main(){
          }
 
         // Get the file access mode using fcntl
-        int flags = fcntl(fileDescriptor, F_GETFL) & O_ACCMODE;
+        int flags = fcntl(fileDescriptor, F_GETFL)  ;                   
 	//by performing end operation we will get value 0,1 or 2(0 for RDONLY,1 for WRONLY  2 for RDWR
 	
         if (flags == -1) {

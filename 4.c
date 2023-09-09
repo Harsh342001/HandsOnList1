@@ -4,7 +4,7 @@
   
 int main()
 {
-    int fd = open("/home/harsh/sslab/hl3.txt", O_RDONLY | O_CREAT | O_EXCL);
+    int fd = open("/home/harsh/sslab/hl3.txt", O_RDONLY | O_CREAT );
   
     printf("fd = %d\n", fd);
   
