@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 23.c
+Author : Harsh Ranpariya
+Description : 23. Write a program to create a Zombie state of the running program
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
 #include<unistd.h>
 #include<stdio.h>
 #include<sys/wait.h>

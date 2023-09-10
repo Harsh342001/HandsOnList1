@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 14.c
+Author : Harsh Ranpariya
+Description : 14 Write a program to find the type of a file.
+                a. Input should be taken from command line.
+                b. program should be able to identify any type of a file.
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>

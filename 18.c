@@ -1,3 +1,17 @@
+/*
+============================================================================
+Name : 18.c
+Author : Harsh Ranpariya
+Description : 18. Write a program to perform Record locking.
+                a. Implement write lock
+                b. Implement read lock
+                Create three records in a file. Whenever you access a particular record, first lock it then modify/access
+                to avoid race condition
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -20,7 +34,7 @@ void acquireWriteLock(int fd, int recordNumber) {
 
 // Function to release a lock
 void releaseLock(int fd) {
-    struct flock lock;
+    struct flock lock;x`int
     lock.l_type = F_UNLCK;
     lock.l_whence = SEEK_SET;
     lock.l_start = 0;
@@ -48,7 +62,7 @@ int main() {
     write(fd, record1, sizeof(char) * sizeof(record1)/sizeof(char));
     write(fd, record2, sizeof(char) * sizeof(record2)/sizeof(char));
     write(fd, record3, sizeof(char) * sizeof(record3)/sizeof(char));
-
+ 
     int choice, recordNumber;
 
     while (1) {

@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 8.c
+Author : Harsh Ranpariya
+Description : 8. Write a program to open a file in read only mode, read line by line and display each line as it is read.
+Close the file when end of file is reached.
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -6,7 +16,7 @@
 int main(int argc, char *argv[]) {
 
     if (argc != 2) {
-        fprintf(stderr, "Usage: %s <filename>\n", argv[0]);
+        perror("Error : missing arguements");
         return 1;
     }
 

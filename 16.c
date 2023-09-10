@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 16.c
+Author : Harsh Ranpariya
+Description : 16.Write a program to perform mandatory locking.
+				a. Implement write lock
+				b. Implement read lock
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
 #include<fcntl.h>
 #include<sys/file.h>
 #include<stdio.h>

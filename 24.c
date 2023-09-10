@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 24.c
+Author : Harsh Ranpariya
+Description : 24. Write a program to create an orphan process.
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
 #include<unistd.h>
 #include<stdio.h>
 #include<stdlib.h>

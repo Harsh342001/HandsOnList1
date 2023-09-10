@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 12.c
+Author : Harsh Ranpariya
+Description : 12. Write a program to find out the opening mode of a file. Use fcntl
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
 #include<stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -5,7 +14,7 @@
 #include<string.h>
 int main(){
 	
-	const char *filename = "12.txt"; // Change this to your file's path
+	const char *filename = "12.txt"; 
 
         // Open the file in read-only mode
         int fileDescriptor = open(filename,O_RDWR);

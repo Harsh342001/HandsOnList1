@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 7.c
+Author : Harsh Ranpariya
+Description : 7. Write a program to copy file1 into file2 ($cp file1 file2).
+Date: 28th Aug, 2023.
+============================================================================
+*/
+
 #include <sys/types.h>
 #include <stdio.h>
 #include<fcntl.h>
@@ -28,7 +37,7 @@ int main(int argc, char* argv[]){
 	int fd_write_close = close(fd_write);
 
 	if(close_fd_read==-1 || close_fd_write==-1)
-                perror("Your system is useless, coz it can't even close a file\n");
+                perror("Error occured while closing file\n");
             	return -1;
 
 	return 0;
